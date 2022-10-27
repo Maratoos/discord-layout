@@ -1,0 +1,45 @@
+.chats-text-voice-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.chats-text-voice-title-side {
+  display: flex;
+  align-items: center;
+}
+.chats-text-voice-title-side .side_arrow {
+  font-size: 15px;
+  color: rgb(130, 130, 130);
+  margin-bottom: 2px;
+  transition: 0.6s;
+}
+.chats-text-voice-title-side .side_arrow_active {
+  transition: 0.6s;
+  transform: rotate(-90deg);
+  font-size: 15px;
+  color: rgb(130, 130, 130);
+  margin-bottom: 2px;
+}
+.chats-text-voice-title-side p {
+  font-family: Signika, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(130, 130, 130);
+}
+.chats-text-voice-title .side_add {
+  font-size: 20px;
+  color: rgb(130, 130, 130);
+  margin-bottom: 3px;
+}
+.chats-text-voice-title:hover .side_arrow {
+  color: rgb(200, 200, 200);
+}
+.chats-text-voice-title:hover p {
+  color: rgb(200, 200, 200);
+}
+.chats-text-voice-title:hover .side_add {
+  color: rgb(200, 200, 200);
+}/*# sourceMappingURL=ChatTitle.css.map */

@@ -1,0 +1,49 @@
+.chats-text-voice {
+    &-title {  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        padding: 0 8px;
+        cursor: pointer;
+        &-side {
+            display: flex;
+            align-items: center;
+            .side_arrow {
+                font-size: 15px;
+                color: rgb(130, 130, 130);
+                margin-bottom: 2px;
+                transition: 0.6s;
+                &_active {
+                    transition: 0.6s;
+                    transform: rotate(-90deg);
+                    font-size: 15px;
+                    color: rgb(130, 130, 130);
+                    margin-bottom: 2px;
+                }
+            }
+            p {
+                font-family: Signika, sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                color: rgb(130, 130, 130);
+            }
+        }
+        .side_add {
+            font-size: 20px;
+            color: rgb(130, 130, 130);
+            margin-bottom: 3px;
+        }
+    }
+    &-title:hover {
+        .side_arrow {
+            color: rgb(200, 200, 200);
+        }
+        p {
+            color: rgb(200, 200, 200);
+        }
+        .side_add {
+            color: rgb(200, 200, 200);
+        }
+    }
+}

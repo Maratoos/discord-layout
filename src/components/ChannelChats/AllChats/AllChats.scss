@@ -1,0 +1,30 @@
+.chats__all {
+    margin-top: -10px;
+    &-item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 33px;
+        width: 200px;
+        margin-left: 25px;
+        color: rgb(130, 130, 130);
+        border-radius: 7px;
+        .chatname {
+            font-family: Signika, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        .tag {
+            color: rgb(130, 130, 130);
+        }
+    }
+    &-item:hover {
+        background-color: #3f4246;
+    }
+    &-item:active {
+        .chatname {
+            color: #ffffff;
+        }
+    }
+}

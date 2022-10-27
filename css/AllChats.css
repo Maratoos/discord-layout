@@ -1,0 +1,28 @@
+.chats__all {
+  margin-top: -10px;
+}
+.chats__all-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 33px;
+  width: 200px;
+  margin-left: 25px;
+  color: rgb(130, 130, 130);
+  border-radius: 7px;
+}
+.chats__all-item .chatname {
+  font-family: Signika, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.chats__all-item .tag {
+  color: rgb(130, 130, 130);
+}
+.chats__all-item:hover {
+  background-color: #3f4246;
+}
+.chats__all-item:active .chatname {
+  color: #ffffff;
+}/*# sourceMappingURL=AllChats.css.map */
