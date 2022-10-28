@@ -25,7 +25,64 @@
 .channel__chats-top:hover {
   background-color: #3f4246;
 }
+.channel__chats-middle {
+  height: 89.2%;
+}
 .channel__chats-bottom {
+  background-color: #22252a;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.channel__chats-bottom .account {
+  width: 52%;
+  padding: 3px 0 2px 3px;
+  display: flex;
+  cursor: pointer;
+}
+.channel__chats-bottom .account-image {
+  margin-right: 8px;
+}
+.channel__chats-bottom .account-image img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.channel__chats-bottom .account-data {
+  font-family: Signika, sans-serif;
+  margin-top: 2px;
+}
+.channel__chats-bottom .account-data p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: -5px;
+}
+.channel__chats-bottom .account-data small {
+  color: rgb(130, 130, 130);
+  font-weight: 400;
+  font-size: 13px;
+}
+.channel__chats-bottom .account:hover {
   background-color: #3f4246;
-  width: 55px;
+  border-radius: 5px;
+}
+.channel__chats-bottom .settings {
+  width: 40%;
+}
+.channel__chats-bottom .settings .items {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+}
+.channel__chats-bottom .settings .items .item {
+  color: rgb(130, 130, 130);
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.channel__chats-bottom .settings .items .item:hover {
+  background-color: #3f4246;
+  border-radius: 5px;
 }/*# sourceMappingURL=ChannelChats.css.map */

@@ -2,6 +2,10 @@ import React from 'react'
 import { ChatTitle } from './ChatTitle/ChatTitle';
 import { AllChats } from './AllChats/AllChats';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import MicIcon from '@mui/icons-material/Mic';
+import HeadphonesIcon from '@mui/icons-material/Headphones';
+import SettingsIcon from '@mui/icons-material/Settings';
+import userImg from "../../assets/userImg.jpg"
 import "../../../css/ChannelChats.css"
 
 const textChats = ["Описание", "Помощь", "Senior's", "Не по работе", "Видосики"]
@@ -28,17 +32,19 @@ export const ChannelChats = () => {
       <div className="channel__chats-bottom">
         <div className="account">
           <div className="account-image">
-            <img src="" alt="" />
+            <img src={userImg} alt="" />
           </div>
           <div className="account-data">
-            <p>sdfsdfsd</p>
-            <h4>#9334</h4>
+            <p>Марат</p>
+            <small>#9334</small>
           </div>
         </div>
         <div className="settings">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <div className='items'>
+            <div className='item'><MicIcon sx={{ fontSize: "22px", marginTop: "3px" }} /></div>
+            <div className='item'><HeadphonesIcon sx={{ fontSize: "22px", marginTop: "3px" }} /></div>
+            <div className='item'><SettingsIcon sx={{ fontSize: "22px", marginTop: "3px" }} /></div>
+          </div>
         </div>
       </div>
     </div>
