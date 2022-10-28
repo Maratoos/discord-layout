@@ -1,7 +1,54 @@
 .header {
     z-index: 1;
     height: 53px;
+    display: flex;
     position: static;
     background-color: #34383c;
+    justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    &__left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        color: rgb(130, 130, 130);
+        p {
+            color: #ffffff;
+            font-family: Signika, sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+    }
+    &__right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: rgb(130, 130, 130);
+        .header-input {
+            margin-right: 15px;
+            color: rgb(130, 130, 130);
+            font-family: Signika, sans-serif;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding-left: 10px;
+            width: 140px;
+            height: 25px;
+            border: 0;
+            outline: none;
+            background-color: #1d2023;
+            transition: 0.3s;
+        }
+        .header-input:focus {
+            width: 240px;
+        }
+        svg {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        svg:hover {
+            color: rgb(170, 170, 170);
+        }
+    }
 }

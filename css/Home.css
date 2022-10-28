@@ -26,10 +26,11 @@
   width: 100%;
 }
 .home__chat-users-header .home__chat-users .chat__bottom input {
+  font-family: Signika, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
   margin: 0 0 30px 26px;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
   border-radius: 10px;
   width: 95%;
   padding: 15px 15% 15px 20px;
@@ -37,4 +38,18 @@
   border: 0;
   outline: none;
   background-color: #3f4246;
+}
+.home__chat-users-header .home__chat-users .chat__bottom .input__images {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  right: 16%;
+}
+.home__chat-users-header .home__chat-users .chat__bottom .input__images svg {
+  margin-left: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.home__chat-users-header .home__chat-users .chat__bottom .input__images svg:hover {
+  color: #57f287;
 }/*# sourceMappingURL=Home.css.map */

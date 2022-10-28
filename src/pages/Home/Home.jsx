@@ -27,13 +27,13 @@ export const Home = () => {
             </div>
             <div className='chat__bottom'>
               <input placeholder="Написать сообщение" type="text" />
-              {/* <div className='input__images'>
+              <div className='input__images'>
                 <AddCircleIcon />
                 <RedeemIcon />
                 <GifIcon />
                 <InsertDriveFileIcon />
                 <AddReactionIcon />
-              </div> */}
+              </div>
             </div>
           </div>
           <ChatUsers />
