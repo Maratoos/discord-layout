@@ -42,7 +42,7 @@ const channelItems = [
 
 export const ChannelMenu = () => {
   return (
-    <nav className='channel__menu'>
+    <div className='channel__menu'>
       <div className="channel__menu-items">
         {channelItems.map(item => (
           <div key={item.path + item.alt} className="channel__menu-items-item">
@@ -56,6 +56,6 @@ export const ChannelMenu = () => {
           </div>
         ))}
       </div>
-    </nav>
+    </div>
   )
 }

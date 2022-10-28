@@ -2,6 +2,9 @@
     height: 100vh;
     width: 240px;
     background-color: #2c2f33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &-top {
         display: flex;
         align-items: center;  
@@ -23,10 +26,6 @@
     }
     &-top:hover {
         background-color: #3f4246;
-    }
-
-    &-middle {
-        height: 89.2%;
     }
 
     &-bottom {
