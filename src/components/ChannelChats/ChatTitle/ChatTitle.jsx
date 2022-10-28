@@ -11,8 +11,8 @@ export const ChatTitle = ({ title }) => {
     }
 
     return (
-        <div className="chats-text-voice-title">
-            <div onClick={handleClick} className="chats-text-voice-title-side">
+        <div onClick={handleClick} className="chats-text-voice-title">
+            <div className="chats-text-voice-title-side">
                 <KeyboardArrowDownIcon className={`side_arrow${arrowActive ? "_active" : ""}`} />
                 <p>{title}</p>
             </div>

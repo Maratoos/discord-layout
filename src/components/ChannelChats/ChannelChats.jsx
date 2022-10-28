@@ -15,18 +15,20 @@ const voiceChats = ["Scrum", "Junior'ы", "Не по работе", "Музык�
 export const ChannelChats = () => {
   return (
     <div className='channel__chats'>
-      <div className="channel__chats-top">
-        <p className='title'>Fntastic/Electron</p>
-        <KeyboardArrowDownIcon className='top_arrow' />
-      </div>
-      <div className="channel__chats-middle">
-        <div className="chats-text-voice" >
-          <ChatTitle title="ТЕКСТОВЫЕ КАНАЛЫ" />
-          <AllChats chats={textChats} isTag={true} />
+      <div>
+        <div className="channel__chats-top">
+          <p className='title'>Fntastic/Electron</p>
+          <KeyboardArrowDownIcon className='top_arrow' />
         </div>
-        <div className="chats-text-voice">
-          <ChatTitle title="ГОЛОСОВЫЕ КАНАЛЫ" />
-          <AllChats chats={voiceChats} isTag={false} />
+        <div className="channel__chats-middle">
+          <div className="chats-text-voice" >
+            <ChatTitle title="ТЕКСТОВЫЕ КАНАЛЫ" />
+            <AllChats chats={textChats} isTag={true} />
+          </div>
+          <div className="chats-text-voice">
+            <ChatTitle title="ГОЛОСОВЫЕ КАНАЛЫ" />
+            <AllChats chats={voiceChats} isTag={false} />
+          </div>
         </div>
       </div>
       <div className="channel__chats-bottom">
