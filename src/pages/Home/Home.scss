@@ -17,6 +17,61 @@
                 flex-direction: column;
                 justify-content: flex-end;
                 background-color: #34383c;
+                &__description {
+                    font-family: Signika, sans-serif;
+                    text-align: center;
+                    margin-bottom: 70px;
+                    h2 {
+                        color: #ffffff;
+                        font-weight: 600;
+                        font-size: 36px;
+                    }
+                    h1 {
+                        color: #ffffff;
+                        font-weight: 700;
+                        font-size: 38px;
+                    }
+                    span {
+                        color: rgb(130, 130, 130);
+                        font-weight: 400;
+                        font-size: 13px; 
+                    }
+                }
+                &__messages {
+                    .message {
+                        margin: 0 0 30px 30px;
+                        display: flex;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                        &-desc {
+                            font-family: Signika, sans-serif;
+                            .user-name-date {
+                                display: flex;
+                                align-items: center;
+                                .name {
+                                    color: #ffffff;
+                                    font-weight: 600;
+                                    font-size: 17px;
+                                    margin-left: 10px;
+                                }
+                                .date {
+                                    color: rgb(130, 130, 130);
+                                    margin-left: 5px;
+                                    font-size: 12px;
+                                }
+                            }
+                            .message-fill {
+                                color: #ffffff;
+                                font-weight: 400;
+                                font-size: 15px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
                 &__bottom {
                     display: flex;
                     width: 100%;

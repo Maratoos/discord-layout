@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { ChannelChats } from '../../components/ChannelChats/ChannelChats'
 import { Header } from '../../components/Header/Header';
 import { ChatUsers } from '../../components/ChatUsers/ChatUsers';
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
-import AddReactionIcon from '@mui/icons-material/AddReaction';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-import RedeemIcon from '@mui/icons-material/Redeem';
-import GifIcon from '@mui/icons-material/Gif';
+import userImg from "../../assets/userImg.jpg"
 import "../../../css/Home.css"
 
 export const Home = () => {
   const [chatUsersActive, setChatUsersActive] = useState(false)
-
-  useEffect(() => {
-    console.log(chatUsersActive)
-  }, [chatUsersActive])
+  
   return (
     <div className="home">
       <ChannelChats />
@@ -28,7 +21,16 @@ export const Home = () => {
               <span>Это начало истории этого сервера</span>
             </div>
             <div className="chat__messages">
-              message
+              <div className="message">
+              <img src={userImg} alt="avatar" />
+              <div className="message-desc">
+                <div className="user-name-date">
+                  <p className='name'>Марат</p>
+                  <p className='date'>27.10.2022</p>
+                </div>
+                <p className='message-fill'>Hello team</p>
+              </div>
+              </div>
             </div>
             <div className='chat__bottom'>
               <input placeholder="Написать сообщение" type="text" />

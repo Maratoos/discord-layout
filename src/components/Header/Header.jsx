@@ -23,7 +23,7 @@ export const Header = ({ setActive, state }) => {
         <BookmarksIcon className='header__image'/>
         <NotificationsIcon className='header__image'/>
         <PushPinIcon className='header__image'/>
-        <PeopleAltIcon onClick={handleClick} className='header__image' />
+        <PeopleAltIcon onClick={handleClick} className={`header__image${state ? "-active" : ""}`} />
         <input
           className='header-input'
           placeholder='Поиск'
