@@ -45,10 +45,15 @@
 .header__right .header-input:focus {
   width: 240px;
 }
-.header__right svg {
+.header__right .header__image {
   margin-right: 15px;
   cursor: pointer;
 }
-.header__right svg:hover {
+.header__right .header__image-active {
+  color: rgb(222, 222, 222);
+  margin-right: 15px;
+  cursor: pointer;
+}
+.header__right .header__image:hover {
   color: rgb(170, 170, 170);
 }/*# sourceMappingURL=Header.css.map */
