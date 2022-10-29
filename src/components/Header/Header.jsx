@@ -8,7 +8,11 @@ import InboxIcon from '@mui/icons-material/Inbox';
 import HelpIcon from '@mui/icons-material/Help';
 import "../../../css/Header.css"
 
-export const Header = () => {
+export const Header = ({ setActive, state }) => {
+
+  const handleClick = () => {
+    setActive(state === false ? true : false)
+  }
   return (
     <div className='header'>
       <div className="header__left">
@@ -16,17 +20,19 @@ export const Header = () => {
         <p>Помощь</p>
       </div>
       <div className="header__right">
-        <BookmarksIcon />
-        <NotificationsIcon />
-        <PushPinIcon />
-        <PeopleAltIcon />
+        <BookmarksIcon className='header__image'/>
+        <NotificationsIcon className='header__image'/>
+        <PushPinIcon className='header__image'/>
+        <PeopleAltIcon onClick={handleClick} className='header__image' />
         <input
           className='header-input'
           placeholder='Поиск'
           type="text" />
-        <InboxIcon />
-        <HelpIcon />
+        <InboxIcon className='header__image' />
+        <HelpIcon className='header__image' />
       </div>
     </div>
   )
 }
+
+// className={`chat-${state ? "active" : ""}`}
