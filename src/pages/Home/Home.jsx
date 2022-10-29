@@ -7,7 +7,6 @@ import "../../../css/Home.css"
 
 export const Home = () => {
   const [chatUsersActive, setChatUsersActive] = useState(false)
-  
   return (
     <div className="home">
       <ChannelChats />
@@ -22,21 +21,24 @@ export const Home = () => {
             </div>
             <div className="chat__messages">
               <div className="message">
-              <img src={userImg} alt="avatar" />
-              <div className="message-desc">
-                <div className="user-name-date">
-                  <p className='name'>Марат</p>
-                  <p className='date'>27.10.2022</p>
+                <img src={userImg} alt="avatar" />
+                <div className="message-desc">
+                  <div className="user-name-date">
+                    <p className='name'>Марат</p>
+                    <p className='date'>27.10.2022</p>
+                  </div>
+                  <p className='message-fill'>Hello team</p>
                 </div>
-                <p className='message-fill'>Hello team</p>
-              </div>
               </div>
             </div>
-            <div className='chat__bottom'>
-              <input placeholder="Написать сообщение" type="text" />
-            </div>
+            <form className='chat__bottom'>
+              <input
+                placeholder="Написать сообщение"
+                type="text"
+              />
+            </form>
           </div>
-          {chatUsersActive && <ChatUsers />} 
+          {chatUsersActive && <ChatUsers />}
         </div>
       </div>
     </div>
