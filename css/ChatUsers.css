@@ -1,4 +1,44 @@
 .users {
-  width: 270px;
+  width: 280px;
   background-color: #2c2f33;
+}
+.users__tag {
+  margin: 10px 0 0 10px;
+  font-family: Signika, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+.users .user {
+  height: 40px;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin: 10px 0 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.users .user .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.users .user .status {
+  position: relative;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  top: 10px;
+  right: 10px;
+  display: block;
+}
+.users .user p {
+  font-family: Signika, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffffff;
+}
+.users .user:hover {
+  background-color: #3f4246;
 }/*# sourceMappingURL=ChatUsers.css.map */
