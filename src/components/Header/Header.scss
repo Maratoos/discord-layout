@@ -43,11 +43,11 @@
         .header-input:focus {
             width: 240px;
         }
-        svg {
+        .header__image {
             margin-right: 15px;
             cursor: pointer;
         }
-        svg:hover {
+        .header__image:hover {
             color: rgb(170, 170, 170);
         }
     }

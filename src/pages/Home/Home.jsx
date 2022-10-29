@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ChannelChats } from '../../components/ChannelChats/ChannelChats'
 import { Header } from '../../components/Header/Header';
 import { ChatUsers } from '../../components/ChatUsers/ChatUsers';
@@ -10,11 +10,16 @@ import GifIcon from '@mui/icons-material/Gif';
 import "../../../css/Home.css"
 
 export const Home = () => {
+  const [chatUsersActive, setChatUsersActive] = useState(false)
+
+  useEffect(() => {
+    console.log(chatUsersActive)
+  }, [chatUsersActive])
   return (
     <div className="home">
       <ChannelChats />
       <div className='home__chat-users-header'>
-        <Header />
+        <Header setActive={setChatUsersActive} state={chatUsersActive} />
         <div className="home__chat-users">
           <div className="chat">
             <div className='chat__description'>
@@ -29,7 +34,7 @@ export const Home = () => {
               <input placeholder="Написать сообщение" type="text" />
             </div>
           </div>
-          <ChatUsers />
+          {chatUsersActive && <ChatUsers />} 
         </div>
       </div>
     </div>
